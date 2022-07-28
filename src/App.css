@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* My CSS */ 
+
+* {
+  margin: 0; 
+  box-sizing: border-box; 
+} 
+
+/* Navbar */
+.Navbar {
+  display: flex; 
+  align-items: center; 
+  max-width: 600px; 
+  padding: 20px; 
+  margin: 0 auto; 
+  border-bottom: 1px solid #f2f2f2; 
+} 
+
+.Nav-Links {
+  margin-left: auto; 
+} 
+
+.Navbar a {
+  text-decoration: none; 
+  padding: 6px; 
+  margin-left: 5px; 
+  color: black; 
+} 
+/* End of Navbar */ 
+
+.Content {
+  max-width: 600px; 
+  margin: 40px auto; 
+  padding: 20px; 
+} 
+
+.Products-List {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+} 
+
+.Product-Preview {
+  height: auto; 
+  width: 200px; 
+  padding: 20px; 
+  border: 1px solid black; 
+  margin: 10px 10px;
+} 
+
+.Product-Preview img {
+  height: 100px; 
+  width: 100px; 
+}
