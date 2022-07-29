@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ProductsList({ products, title }) {
     // const products = props.products; 
     // const title = props.title; 
@@ -12,7 +14,9 @@ export default function ProductsList({ products, title }) {
                             <img src={product.image} alt="" /> 
                             <h4>{ product.title }</h4> 
                             <p>${ product.price }</p> 
-                            <button>View Item</button> 
+                            <Link to={`/shop/${product.id}`}>
+                                <button>View Item Details</button>
+                            </Link>                             
                         </div> 
                     );    
                 })} 

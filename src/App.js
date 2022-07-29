@@ -9,6 +9,7 @@ import NotFound from './components/NotFound';
 import Login from './components/Login'; 
 import { UserProvider } from './contexts/UserContext'; 
 import AuthChecker from './components/AuthChecker'; 
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<NavbarFooter />}>
               <Route index element={<Home />} /> 
               <Route path="/shop" element={<Products />} /> 
+              <Route path="/shop/:id" element={<ProductDetails />} /> 
               <Route path="/cart" element={
                 <AuthChecker>
                   <Cart />
