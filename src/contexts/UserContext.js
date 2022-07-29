@@ -12,4 +12,4 @@ const UserProvider = (props) => {
     ); 
 }; 
 
-export { UserContext, UserProvider } 
+export { UserContext, UserProvider };  

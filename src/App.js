@@ -6,8 +6,9 @@ import Home from './components/Home';
 import Products from './components/Products'; 
 import Cart from './components/Cart'; 
 import NotFound from './components/NotFound'; 
-import Login from './components/Login';
+import Login from './components/Login'; 
 import { UserProvider } from './contexts/UserContext'; 
+import AuthChecker from './components/AuthChecker'; 
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
             <Route path="/" element={<NavbarFooter />}>
               <Route index element={<Home />} /> 
               <Route path="/shop" element={<Products />} /> 
-              <Route path="/cart" element={<Cart />} /> 
+              <Route path="/cart" element={
+                <AuthChecker>
+                  <Cart />
+                </AuthChecker> 
+              } /> 
               <Route path="/login" element={<Login />} /> 
               <Route path="*" element={<NotFound />} /> 
             </Route> 

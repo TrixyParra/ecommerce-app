@@ -1,7 +1,11 @@
 import NavLink from './NavLink';
 import { Outlet } from 'react-router-dom'; 
+import { useContext } from 'react';
+import { UserContext } from '../contexts/UserContext';
 
 export default function NavbarFooter() {  ////(props) 
+    const { loggedInUser } = useContext(UserContext); 
+    
     return (
         <>
             <nav className="Navbar">
@@ -10,7 +14,7 @@ export default function NavbarFooter() {  ////(props)
                     <NavLink route="/" label="Home" /> 
                     <NavLink route="/shop" label="Shop" /> 
                     <NavLink route="/cart" label="View Cart" /> 
-                    <NavLink route="/login" label="Login" /> 
+                    { !loggedInUser && <NavLink route="/login" label="Login" /> } 
                 </div> 
             </nav> 
             <div style={{ padding: 40 }}>
