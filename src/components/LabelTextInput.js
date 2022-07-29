@@ -7,6 +7,7 @@ export default function LabelTextInput({ name, value, setValue, inputType }) {
                 type={inputType || "text"} 
                 value={value} 
                 onChange={(e) => setValue(e.target.value)} 
+                autoComplete="off" 
             /> 
         </div> 
     ); 
