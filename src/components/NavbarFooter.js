@@ -23,18 +23,20 @@ export default function NavbarFooter() {  ////(props)
                 <Outlet /> 
             </div> 
             <footer style={{ textAlign: "center" }}>
-                <p>Stay Connected!</p>
+                <p><b>Stay Connected!</b></p>
                 <div className="Social-Links">
                     <a href="https://www.facebook.com/">FaceBook</a> 
                     <a href="https://www.instagram.com/">Instagram</a> 
                     <a href="https://www.tiktok.com/">TikTok</a> 
                 </div>
-                <div className="Footer-Links">
+                <div className="Footer-NavLinks">
                     <a href="/">Home</a> 
+                    <span className="Footer-Line">|</span> 
                     <a href="/shop">Shop</a> 
-                    <a href="/cart">Cart</a> 
+                    <span className="Footer-Line">|</span> 
+                    <a href="/cart">Cart</a>
                 </div>
-                &copy; 2022 Trixy Parra
+                <div className="Footer-StoreName">&copy; 2022 Trixy Parra</div>
             </footer> 
         </> 
     ); 

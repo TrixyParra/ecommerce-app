@@ -45,6 +45,7 @@
   box-sizing: border-box; 
 } 
 
+/* Navbar & Footer */ 
 /* Navbar */
 .Navbar {
   background-color: black; 
@@ -69,7 +70,48 @@
   padding: 6px; 
   margin-left: 5px;  
 } 
-/* End of Navbar */ 
+
+/* Footer */ 
+footer {
+  height: 180px; 
+  background-color: black; 
+  color: #fff; 
+} 
+
+footer p {
+  padding: 20px; 
+} 
+
+.Social-Links {
+  margin-top: 0px; 
+  margin-bottom: 20px; 
+} 
+
+.Social-Links a {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px; 
+} 
+
+.Footer-NavLinks {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+} 
+
+.Footer-NavLinks a {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px; 
+} 
+
+.Footer-Line {
+  color: rgb(40, 241, 40); 
+} 
+
+.Footer-StoreName {
+  margin-bottom: 0; 
+}
+/* End of Navbar & Footer */ 
 
 
 /* .Content {
@@ -165,7 +207,7 @@
 
 .Login h2 {
   text-align: center; 
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
 } 
 
 .Login-Labels {
@@ -197,6 +239,7 @@
   margin-top: 20px; 
   box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
   cursor: pointer; 
+  transition: all 0.5s; 
 } 
 
 .Login-Button:hover {
