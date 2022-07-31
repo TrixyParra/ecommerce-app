@@ -123,15 +123,102 @@ footer p {
 
 /* Home Page */ 
 /* Header */ 
-  .Home-Header {
-    height: 77vh; 
-    width: 100%;
-    background-image: url(/src/images/sale.jpg); 
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-  } 
-/* End of Header */ 
+.Home-Header {
+  height: 77vh; 
+  width: 100%;
+  background-image: url(/src/images/sale.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} 
+
+/* Categories Section */ 
+.Categories {
+  text-align: center; 
+  padding: 20px; 
+  /* margin: auto;  */
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  background-color: lightgreen; 
+} 
+
+.Category-Title {
+  text-align: center; 
+  /* padding: 50px;  */
+} 
+
+.Category-List {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap; 
+  background-color: burlywood; 
+  padding: 20px; 
+} 
+
+.Womens, .Mens, .Jewelry, .Electronics {
+  height: 200px; 
+  width: 500px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: #fff; 
+  margin: 10px; 
+  /* border: 1px solid black;  */
+  
+} 
+
+.Womens {
+  border-top-left-radius: 100px; 
+  border-bottom-right-radius: 100px; 
+  background-image: url(/src/images/sale.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} 
+
+.Mens {
+  border-top-right-radius: 100px; 
+  border-bottom-left-radius: 100px; 
+  background-image: url(/src/images/sale.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} 
+
+.Jewelry {
+  border-top-right-radius: 100px; 
+  border-bottom-left-radius: 100px; 
+  background-image: url(/src/images/sale.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} 
+
+.Electronics {
+  border-top-left-radius: 100px; 
+  border-bottom-right-radius: 100px; 
+  background-image: url(/src/images/sale.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} 
+
+.Shop-Button {  
+  background-color: limegreen; 
+  color: white; 
+  padding: 10px; 
+  font-size: 20px; 
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
+  cursor: pointer; 
+  transition: all 0.5s; 
+} 
+
+.Shop-Button:hover {
+  background-color: rgb(40, 241, 40); 
+} 
 /* End of Home Page */
 
 /* Shop Page */ 
