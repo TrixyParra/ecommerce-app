@@ -103,16 +103,15 @@
   background-repeat: no-repeat; 
   margin: auto; 
 } 
+/* End of Header */
 
+/* Product Details Display */
 .Products-List {
   display: flex; 
   justify-content: center; 
   flex-wrap: wrap; 
 } 
-/* End of Shop Page */
 
-
-/* Product Details Display */
 .Product-Preview {
   height: auto; 
   width: 200px; 
@@ -147,4 +146,67 @@
   width: 800px; 
   padding: 50px; 
 } 
-/* End of Product Details Display */
+/* End of Product Details Display */ 
+/* End of Shop Page */ 
+
+
+/* Login Page */ 
+.Login {
+  width: 430px; 
+  height: 485px; 
+  padding: 60px 35px 35px 35px; 
+  border-radius: 40px; 
+  background-color: #ecf0f3; 
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #cbced1; 
+  margin: auto; 
+  margin-top: 60px; 
+  margin-bottom: 60px; 
+} 
+
+.Login h2 {
+  text-align: center; 
+  margin-bottom: 40px;
+} 
+
+.Login-Labels {
+  font-size: 20px; 
+  font-weight: bold; 
+} 
+
+.Login-Inputs {
+  width: 100%; 
+  background: none; 
+  outline: none; 
+  border: none; 
+  border-radius: 25px; 
+  font-size: 18px; 
+  padding: 15px 50px;  
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff; 
+  margin-top: 10px; 
+  margin-bottom: 20px; 
+} 
+
+.Login-Button {
+  height: 35px; 
+  width: 100%; 
+  border-radius: 25px; 
+  border: none;
+  font-size: 20px; 
+  background-color: limegreen;
+  color: white; 
+  margin-top: 20px; 
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
+  cursor: pointer; 
+} 
+
+.Login-Button:hover {
+  background-color: rgb(40, 241, 40); 
+} 
+
+.Login-ErrorMessage {
+  text-align: center; 
+  font-weight: bold; 
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+} 
+/* End of Login Page */ 
