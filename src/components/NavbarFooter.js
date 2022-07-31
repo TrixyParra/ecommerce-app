@@ -9,7 +9,7 @@ export default function NavbarFooter() {  ////(props)
     return (
         <>
             <nav className="Navbar">
-                <h2>Store Name</h2> 
+                <h2>Store <span>Name</span></h2> 
                 <div className="Nav-Links">
                     <NavLink route="/" label="Home" /> 
                     <NavLink route="/shop" label="Shop" /> 
@@ -22,7 +22,18 @@ export default function NavbarFooter() {  ////(props)
             {/* {props.children}  */}
                 <Outlet /> 
             </div> 
-            <footer>
+            <footer style={{ textAlign: "center" }}>
+                <p>Stay Connected!</p>
+                <div className="Social-Links">
+                    <a href="https://www.facebook.com/">FaceBook</a> 
+                    <a href="https://www.instagram.com/">Instagram</a> 
+                    <a href="https://www.tiktok.com/">TikTok</a> 
+                </div>
+                <div className="Footer-Links">
+                    <a href="/">Home</a> 
+                    <a href="/shop">Shop</a> 
+                    <a href="/cart">Cart</a> 
+                </div>
                 &copy; 2022 Trixy Parra
             </footer> 
         </> 
