@@ -15,6 +15,7 @@ export default function NavbarFooter() {  ////(props)
                     <NavLink route="/shop" label="Shop" /> 
                     <NavLink route="/cart" label="View Cart" /> 
                     { !loggedInUser && <NavLink route="/login" label="Login" /> } 
+                    { loggedInUser && <NavLink route="/login" label="Logout" /> } 
                 </div> 
             </nav> 
             <div style={{ padding: 40 }}>
@@ -29,3 +30,4 @@ export default function NavbarFooter() {  ////(props)
 } 
 
 // ToDo: Make nav it's own component ? 
+// ToDo: Fix the Logout to refresh login page ?
