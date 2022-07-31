@@ -2,9 +2,7 @@ export default function Home() {
 
     return (
         <>
-            <header>
-                <h1>Homepage</h1> 
-            </header> 
+            <header className="Home-Header"></header> 
 
             <div className="Slogan">
                 <h2>Everything you need,<br></br>For You!</h2>

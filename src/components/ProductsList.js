@@ -6,6 +6,7 @@ export default function ProductsList({ products, title }) {
 
     return (
         <>
+            <header className="Shop-Header"></header>
             <h2>{ title }</h2>
             <div className="Products-List">
                 {products.map((product) => {

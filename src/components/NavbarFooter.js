@@ -18,7 +18,7 @@ export default function NavbarFooter() {  ////(props)
                     { loggedInUser && <NavLink route="/login" label="Logout" /> } 
                 </div> 
             </nav> 
-            <div style={{ padding: 40 }}>
+            <div className='Content'> {/*  style={{ padding: 40 }} */} 
             {/* {props.children}  */}
                 <Outlet /> 
             </div> 
