@@ -126,7 +126,7 @@ footer p {
 .Home-Header {
   height: 77vh; 
   width: 100%;
-  background-image: url(/src/images/sale.jpg); 
+  background-image: url("../src/images/sale.jpg"); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -139,7 +139,7 @@ footer p {
   /* margin: auto;  */
   margin-top: 30px; 
   margin-bottom: 30px; 
-  background-color: lightgreen; 
+  /* background-color: lightgreen;  */
 } 
 
 .Category-Title {
@@ -152,7 +152,7 @@ footer p {
   justify-content: center; 
   align-items: center;
   flex-wrap: wrap; 
-  background-color: burlywood; 
+  /* background-color: burlywood;  */
   padding: 20px; 
 } 
 
@@ -171,7 +171,7 @@ footer p {
 .Womens {
   border-top-left-radius: 100px; 
   border-bottom-right-radius: 100px; 
-  background-image: url(/src/images/sale.jpg); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../src/images/womens-clothes.jpg"); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -180,7 +180,7 @@ footer p {
 .Mens {
   border-top-right-radius: 100px; 
   border-bottom-left-radius: 100px; 
-  background-image: url(/src/images/sale.jpg); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../src/images/mens-clothes.jpg"); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -189,7 +189,7 @@ footer p {
 .Jewelry {
   border-top-right-radius: 100px; 
   border-bottom-left-radius: 100px; 
-  background-image: url(/src/images/sale.jpg); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../src/images/jewelry.jpg"); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -198,7 +198,7 @@ footer p {
 .Electronics {
   border-top-left-radius: 100px; 
   border-bottom-right-radius: 100px; 
-  background-image: url(/src/images/sale.jpg); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../src/images/technology.jpg"); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
