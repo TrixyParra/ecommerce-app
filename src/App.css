@@ -110,7 +110,7 @@ footer p {
 
 .Footer-StoreName {
   margin-bottom: 0; 
-}
+} 
 /* End of Navbar & Footer */ 
 
 
@@ -125,7 +125,6 @@ footer p {
 /* Header */ 
 .Home-Header {
   height: 77vh; 
-  width: 100%;
   background-image: url("../src/images/sale.jpg"); 
   background-position: center; 
   background-size: cover; 
@@ -136,15 +135,12 @@ footer p {
 .Categories {
   text-align: center; 
   padding: 20px; 
-  /* margin: auto;  */
   margin-top: 30px; 
   margin-bottom: 30px; 
-  /* background-color: lightgreen;  */
 } 
 
 .Category-Title {
   text-align: center; 
-  /* padding: 50px;  */
 } 
 
 .Category-List {
@@ -152,7 +148,6 @@ footer p {
   justify-content: center; 
   align-items: center;
   flex-wrap: wrap; 
-  /* background-color: burlywood;  */
   padding: 20px; 
 } 
 
@@ -162,10 +157,10 @@ footer p {
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  font-size: 25px; 
   color: #fff; 
+  text-shadow: 0 0 15px black; 
   margin: 10px; 
-  /* border: 1px solid black;  */
-  
 } 
 
 .Womens {
@@ -217,6 +212,50 @@ footer p {
 } 
 
 .Shop-Button:hover {
+  background-color: rgb(40, 241, 40); 
+} 
+
+/* Mailing List Section */ 
+.Mailing-List {
+  text-align: center; 
+  background-color: rgba(50, 205, 50, 0.356); 
+  padding: 50px; 
+} 
+
+.Mailing-List h3 {
+  font-size: 20px; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+} 
+
+.Mailing-List p {
+  font-weight: bold; 
+  margin-bottom: 15px; 
+} 
+
+.Mailing-List input {
+  font-size: 16px; 
+  border-radius: 5px; 
+  border-color: limegreen; 
+  outline: none; 
+  padding: 5px; 
+  margin: 10px; 
+} 
+
+.Mailing-List button {
+  background-color: limegreen; 
+  color: white; 
+  width: 60px;
+  padding: 8px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
+  cursor: pointer; 
+  transition: all 0.5s; 
+} 
+
+.Mailing-List button:hover {
   background-color: rgb(40, 241, 40); 
 } 
 /* End of Home Page */

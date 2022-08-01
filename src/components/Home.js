@@ -16,7 +16,7 @@ export default function Home() {
                         <h3>Men's CLothing</h3> 
                     </div> 
                     <div className="Jewelry">
-                        <h3>Jewelery</h3> 
+                        <h3>Jewelry</h3> 
                     </div> 
                     <div className="Electronics">
                         <h3>Electronics</h3> 
@@ -31,7 +31,7 @@ export default function Home() {
 
             <div className="Mailing-List">
                 <h3>Join our Mailing List!</h3> 
-                <p>Stay in the loop for exclusive deals and the first to know about our new arrivals.</p> 
+                <p>Stay in the loop for exclusive deals and new arrivals.</p> 
                 <input type="email" /> 
                 <button>Join</button> 
             </div> 
