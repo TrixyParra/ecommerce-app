@@ -8,7 +8,7 @@ export default function Products() {
     return (
         <div className="Home">
             { error && <div>{error}</div> } 
-            { isLoading && <div>Loading...</div> } 
+            { isLoading && <div className="Loading"></div> } 
             { products && <ProductsList products={products} title="All Products!" /> } 
         </div> 
     ); 

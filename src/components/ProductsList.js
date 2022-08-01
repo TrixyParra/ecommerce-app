@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 
 export default function ProductsList({ products, title }) {
     // const products = props.products; 
@@ -6,8 +6,8 @@ export default function ProductsList({ products, title }) {
 
     return (
         <>
-            <header className="Shop-Header"></header>
-            <h2>{ title }</h2>
+            <header className="Shop-Header"></header> 
+            <h2>{ title }</h2> 
             <div className="Products-List">
                 {products.map((product) => {
                     return ( 
@@ -16,12 +16,12 @@ export default function ProductsList({ products, title }) {
                             <h4>{ product.title }</h4> 
                             <p>${ product.price }</p> 
                             <Link to={`/shop/${product.id}`}>
-                                <button>View Item Details</button>
-                            </Link>                             
+                                <button>View Item Details</button> 
+                            </Link> 
                         </div> 
-                    );    
+                    ); 
                 })} 
             </div> 
-        </>
-    );    
+        </> 
+    ); 
 } 

@@ -1,6 +1,6 @@
-//import { useState } from "react";
-import { useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+//import { useState } from "react"; 
+import { useParams } from "react-router-dom"; 
+import useFetch from "./useFetch"; 
 
 export default function ProductDetails() {
     // Grab Route parameter (id) from the Route to fetch the product from the id 
@@ -11,7 +11,7 @@ export default function ProductDetails() {
     return (
         <>
             <article className="Product-Details">
-                { isLoading && <div>Loading...</div> } 
+                { isLoading && <div className="Loading"></div> } 
                 { error && <div>{ error }</div> } 
                 { product && (
                     <div className="Product-Card">
@@ -22,12 +22,12 @@ export default function ProductDetails() {
                             <p>${ product.price }</p> 
                             {/* <p>{product.rating}</p>  */}
                             <p><b>Product Description:</b> { product.description }</p> 
-                            <input type="number" id="quantity" name="quantity" min="1" max="10" defaultValue="1"></input>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" defaultValue="1"></input> 
                             <button>Add to Cart</button> 
                         </div> 
                     </div> 
                 )} 
             </article> 
-        </>         
+        </> 
     ); 
 } 

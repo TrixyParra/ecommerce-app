@@ -41,8 +41,11 @@
 /* My CSS */ 
 
 * {
-  margin: 0; 
   box-sizing: border-box; 
+} 
+
+body {
+  margin: 0; 
 } 
 
 /* Navbar & Footer */ 
@@ -113,6 +116,28 @@ footer p {
 } 
 /* End of Navbar & Footer */ 
 
+
+/* Loader / Loading */ 
+.Loading {
+  height: 40px; 
+  width: 40px; 
+  border: 5px solid rgba(50, 205, 50, 0.356); 
+  border-radius: 50%; 
+  border-top-color: rgb(40, 241, 40); 
+  /* margin: 40vh auto;  */   /* ! margin top/bottom affects where page loads to instead of the top */
+  margin: 70px auto; 
+  animation: spinner 1s linear infinite; 
+} 
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg); 
+  } 
+  100% {
+    transform: rotate(360deg); 
+  } 
+} 
+/* End of Loader / Loading */ 
 
 /* .Content {
   max-width: 600px; 
