@@ -28,17 +28,18 @@ export default function Home() {
                 <button className="Shop-Button">Start Shopping</button> 
                 </Link> 
             </div> 
-            <div className="Loading"></div>
-            <div className="Slogan">
-                <h2>Everything you need,<br></br>For You!</h2>
-            </div> 
 
-            <div className="Mailing-List">
-                <h3>Join our Mailing List!</h3> 
-                <p>Stay in the loop for exclusive deals and new arrivals.</p> 
-                <input type="email" /> 
-                <button>Join</button> 
-            </div> 
+            <div className="Slogan-Mailing">
+                <div className="Slogan">
+                    <h2>"Everything you need,<br></br>For You!"</h2>
+                </div> 
+                <div className="Mailing-List">
+                    <h3>Join our Mailing List!</h3> 
+                    <p>Stay in the loop for exclusive deals and new arrivals.</p> 
+                    <input type="email" /> 
+                    <button>Join</button> 
+                </div> 
+            </div>  
         </> 
     ); 
 } 

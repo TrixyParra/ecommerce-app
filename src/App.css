@@ -45,7 +45,7 @@
 } 
 
 body {
-  margin: 0; 
+  margin: 0px; 
 } 
 
 /* Navbar & Footer */ 
@@ -76,13 +76,14 @@ body {
 
 /* Footer */ 
 footer {
-  height: 180px; 
+  height: 200px; 
   background-color: black; 
   color: #fff; 
 } 
 
 footer p {
-  padding: 20px; 
+  padding-top: 30px; 
+  padding-bottom: 5px;
 } 
 
 .Social-Links {
@@ -240,11 +241,30 @@ footer p {
   background-color: rgb(40, 241, 40); 
 } 
 
+/* Slogan Section */ 
+.Slogan-Mailing {
+  display: flex; 
+  justify-content: center; 
+  /* flex-wrap: wrap; */
+  margin-bottom: -16px; 
+} 
+
+.Slogan {
+  text-align: center; 
+  font-size: 25px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff; 
+  /* border: 0.5px solid rgb(40, 241, 40);  */
+  padding: 50px; 
+  width: 100%; 
+} 
+
 /* Mailing List Section */ 
 .Mailing-List {
   text-align: center; 
   background-color: rgba(50, 205, 50, 0.356); 
   padding: 50px; 
+  width: 100%; 
 } 
 
 .Mailing-List h3 {
@@ -344,10 +364,16 @@ footer p {
 
 
 /* Login Page */ 
+.Login-Section {
+  padding: 10px; 
+  display: flex; 
+  justify-content: center; 
+} 
+
 .Login {
-  width: 430px; 
-  height: 485px; 
-  padding: 60px 35px 35px 35px; 
+  width: 350px; 
+  height: 455px; 
+  padding: 35px; 
   border-radius: 40px; 
   background-color: #ecf0f3; 
   box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #cbced1; 
@@ -358,7 +384,7 @@ footer p {
 
 .Login h2 {
   text-align: center; 
-  margin-bottom: 40px; 
+  margin-bottom: 25px; 
 } 
 
 .Login-Labels {
@@ -373,7 +399,7 @@ footer p {
   border: none; 
   border-radius: 25px; 
   font-size: 18px; 
-  padding: 15px 50px;  
+  padding: 15px 22px;  
   box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff; 
   margin-top: 10px; 
   margin-bottom: 20px; 
@@ -404,3 +430,18 @@ footer p {
   margin-bottom: 10px; 
 } 
 /* End of Login Page */ 
+
+
+/* Media Queries */ 
+@media (max-width: 622px) {
+  .Slogan-Mailing {
+    flex-wrap: wrap; 
+    margin-bottom: -17px; 
+  } 
+  .Slogan {
+    padding: 25px; 
+  } 
+  .Mailing-List {
+    padding: 25px; 
+  } 
+} 

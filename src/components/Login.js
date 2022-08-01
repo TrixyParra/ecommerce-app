@@ -34,24 +34,26 @@ export default function Login() {
 
     return (
         <>
-            <div className="Login">
-                <h2>Login</h2> 
-                <form onSubmit={handleSubmit}>
-                    <LabelTextInput 
-                        name="Email" 
-                        value={email} 
-                        setValue={setEmail} 
-                    /> 
-                    <LabelTextInput 
-                        name="Password" 
-                        value={password} 
-                        setValue={setPassword} 
-                        inputType="password" 
-                    /> 
-                    <button type="submit" className="Login-Button">Login</button> 
-                </form> 
-                { showLoginError && <div className="Login-ErrorMessage">User Not Found</div> } 
-            </div> 
+            <div className="Login-Section">
+                <div className="Login">
+                    <h2>Login</h2> 
+                    <form onSubmit={handleSubmit}>
+                        <LabelTextInput 
+                            name="Email" 
+                            value={email} 
+                            setValue={setEmail} 
+                        /> 
+                        <LabelTextInput 
+                            name="Password" 
+                            value={password} 
+                            setValue={setPassword} 
+                            inputType="password" 
+                        /> 
+                        <button type="submit" className="Login-Button">Login</button> 
+                    </form> 
+                    { showLoginError && <div className="Login-ErrorMessage">User Not Found</div> } 
+                </div> 
+            </div>             
         </> 
     ); 
 } 
