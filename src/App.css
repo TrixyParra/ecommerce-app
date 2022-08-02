@@ -62,6 +62,7 @@ body {
   /* border-bottom: 1px solid #f2f2f2;  */
   position: sticky; 
   top: 0; 
+  z-index: 1;
 } 
 
 .Nav-Links {
@@ -260,7 +261,6 @@ footer p {
   font-size: 25px; 
   background-color: rgba(0, 0, 0, 0.5); 
   color: #fff; 
-  /* border: 0.5px solid rgb(40, 241, 40);  */
   padding: 50px; 
   width: 100%; 
 } 
@@ -311,6 +311,7 @@ footer p {
 } 
 /* End of Home Page */
 
+
 /* Shop Page */ 
 /* Header */ 
 .Shop-Header {
@@ -320,30 +321,73 @@ footer p {
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
+  background-attachment: fixed; 
   margin: auto; 
 } 
-/* End of Header */
 
-/* Product Details Display */
+/* Products List Display */ 
+.Shop-Title {
+  text-align: center; 
+  margin-top: 50px; 
+} 
+
 .Products-List {
   display: flex; 
   justify-content: center; 
   flex-wrap: wrap; 
+  padding: 20px; 
+  text-align: center; 
 } 
 
 .Product-Preview {
   height: auto; 
   width: 200px; 
   padding: 20px; 
-  border: 1px solid black; 
-  margin: 10px 10px;
+  border: 1px solid #cbced1; 
+  border-radius: 5px; 
+  margin: 10px; 
+  position: relative; 
 } 
 
 .Product-Preview img {
-  height: 100px; 
+  height: 120px; 
   width: 100px; 
-}
+} 
 
+.Product-Preview h4 {
+  /* text-align: start;  */
+  padding: 0 5px; 
+  margin-top: 10px; 
+} 
+
+.Product-Preview p {
+  padding: 0px; 
+  margin-bottom: 35px; 
+} 
+
+.Product-Preview button {
+  background-color: limegreen; 
+  color: white; 
+  padding: 8px; 
+  font-size: 14px; 
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
+  position: absolute; 
+  bottom: 5px; 
+  right: 37px; 
+  margin-bottom: 5px; 
+  cursor: pointer; 
+  transition: all 0.5s; 
+} 
+
+.Product-Preview button:hover {
+  background-color: rgb(40, 241, 40); 
+} 
+/* End of Shop Page */ 
+
+
+/* Product Details Display Page */ 
 .Product-Card {
   display: flex; 
   justify-content: center; 
