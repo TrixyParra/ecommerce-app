@@ -46,6 +46,7 @@
 
 body {
   margin: 0px; 
+  box-sizing: border-box; 
 } 
 
 /* Navbar & Footer */ 
@@ -167,6 +168,11 @@ footer p {
 
 .Category-Title {
   text-align: center; 
+  padding: 20px; 
+  border: 3px solid limegreen;  
+  border-left: none; 
+  border-right: none; 
+  background-color: rgba(50, 205, 50, 0.356); 
 } 
 
 .Category-List {
@@ -310,7 +316,7 @@ footer p {
 .Shop-Header {
   height: 70vh; 
   width: 100%; 
-  background-image: url(/src/images/summer-sale-banner.jpg); 
+  background-image: url("../src/images/summer-sale-banner.jpg"); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -430,6 +436,47 @@ footer p {
   margin-bottom: 10px; 
 } 
 /* End of Login Page */ 
+
+
+/* Page Not Found */ 
+.Not-Found {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../src/images/not-found-background.jpg"); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 82vh; 
+  width: 100%; 
+  color: white; 
+  display: flex; 
+  align-items: center; 
+  margin-bottom: -16px; 
+} 
+
+.Not-FoundText {
+  padding: 30px; 
+  text-align: center; 
+} 
+
+.Not-FoundText h1 {
+  font-size: 70px; 
+  padding: 0px; 
+  margin: 0px; 
+} 
+
+.Not-FoundText p {
+  font-size: 17px; 
+  margin-bottom: 40px; 
+} 
+
+.Link-BackHome {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 8px; 
+  border: 1px solid limegreen; 
+  border-radius: 5px; 
+  background-color: rgba(0, 0, 0, 0.7); 
+} 
+/* End of Page Not Found */ 
 
 
 /* Media Queries */ 
