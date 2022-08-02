@@ -18,8 +18,8 @@ export default function ProductDetails() {
                         <img src={product.image} alt="" /> 
                         <div className="Product-Description">
                             <h2>{ product.title }</h2> 
-                            <p><b>Category:</b> { product.category }</p> 
                             <p>${ product.price }</p> 
+                            <p><b>Category:</b> { product.category }</p> 
                             {/* <p>{product.rating}</p>  */}
                             <p><b>Product Description:</b> { product.description }</p> 
                             <input type="number" id="quantity" name="quantity" min="1" max="10" defaultValue="1"></input> 

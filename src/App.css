@@ -401,9 +401,10 @@ footer p {
 /* Product Details Display Page */ 
 .Product-Card {
   display: flex; 
-  justify-content: center; 
+  justify-content: space-around; 
   align-items: center; 
-  margin: 70px auto; 
+  padding: 20px; 
+  margin: 40px auto; 
   /* max-width: 1000px; */
   /* flex-wrap: wrap; */
 } 
@@ -411,17 +412,39 @@ footer p {
 .Product-Card img {
   height: 400px; 
   width: 400px; 
-  /* border: 1px solid black;  */
 } 
 
 .Product-Description {
-  /* border: 1px solid black;  */
   height: auto; 
   width: 800px; 
   padding: 50px; 
+  padding-right: 0px; 
 } 
-/* End of Product Details Display */ 
-/* End of Shop Page */ 
+
+.Product-Card input {
+  padding: 5px; 
+  font-size: 16px; 
+  border-color: limegreen; 
+  outline: none; 
+} 
+
+.Product-Card button {
+  background-color: limegreen; 
+  color: white; 
+  padding: 8px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
+  margin: 0 10px; 
+  cursor: pointer; 
+  transition: all 0.5s; 
+} 
+
+.Product-Card button:hover {
+  background-color: rgb(40, 241, 40); 
+} 
+/* End of Product Details Page */ 
 
 
 /* Login Page */ 
@@ -535,6 +558,18 @@ footer p {
 
 
 /* Media Queries */ 
+@media (max-width: 735px) {
+  .Product-Card {
+    flex-wrap: wrap; 
+  } 
+  .Product-Card img {
+    margin: auto; 
+  } 
+  .Product-Description {
+    padding: 20px 40px; 
+  } 
+} 
+
 @media (max-width: 622px) {
   .Slogan-Mailing {
     flex-wrap: wrap; 
