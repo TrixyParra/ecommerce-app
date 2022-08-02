@@ -12,7 +12,7 @@ export default function ProductDetails() {
         <>
             <article className="Product-Details">
                 { isLoading && <div className="Loading"></div> } 
-                { error && <div>{ error }</div> } 
+                { error && <div className="Error-Message">{ error }</div> } 
                 { product && (
                     <div className="Product-Card">
                         <img src={product.image} alt="" /> 

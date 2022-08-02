@@ -325,6 +325,17 @@ footer p {
   margin: auto; 
 } 
 
+/* Error Message */ 
+.Error-Message {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 70vh; 
+  font-weight: bold; 
+  background-color: rgba(50, 205, 50, 0.356); 
+  margin-bottom: -16px; 
+} 
+
 /* Products List Display */ 
 .Shop-Title {
   text-align: center; 
