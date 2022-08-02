@@ -13,7 +13,7 @@ export default function ProductsList({ products, title }) {
                     return ( 
                         <div className="Product-Preview" key={product.id}>
                             <img src={product.image} alt="" /> 
-                            <h4>{ product.title }</h4> 
+                            <h4>{ product.title.substring(0, 12) } ...</h4> 
                             <p>${ product.price }</p> 
                             <Link to={`/shop/${product.id}`}>
                                 <button>View Item Details</button> 

@@ -18,9 +18,9 @@ export default function ProductDetails() {
                         <img src={product.image} alt="" /> 
                         <div className="Product-Description">
                             <h2>{ product.title }</h2> 
-                            <p>${ product.price }</p> 
+                            <p><b>Rated: </b> { product.rating && product.rating.rate } <b>by (</b>{ product.rating && product.rating.count }<b>) reviewers!</b></p> 
+                            <p style={{ color: "limegreen", fontWeight: "bold", fontSize: "22px" }}>${ product.price }</p> 
                             <p><b>Category:</b> { product.category }</p> 
-                            {/* <p>{product.rating}</p>  */}
                             <p><b>Product Description:</b> { product.description }</p> 
                             <input type="number" id="quantity" name="quantity" min="1" max="10" defaultValue="1"></input> 
                             <button>Add to Cart</button> 
