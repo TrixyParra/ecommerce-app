@@ -7,7 +7,7 @@ export default function Products() {
 
     return (
         <div>
-            { error && <div className="Error-Message">{error}</div> } 
+            { error && <div className="Loading-Wrapper"><div className="Loading"></div></div> } 
             { isLoading && <div className="Loading"></div> } 
             { products && <ProductsList products={products} title="All Products!" /> } 
         </div> 

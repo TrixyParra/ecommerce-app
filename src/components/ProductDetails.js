@@ -11,7 +11,7 @@ export default function ProductDetails() {
     return (
         <>
             <article className="Product-Details">
-                { isLoading && <div className="Loading"></div> } 
+                { isLoading && <div className="Loading-Wrapper"><div className="Loading"></div></div> } 
                 { error && <div className="Error-Message">{ error }</div> } 
                 { product && (
                     <div className="Product-Card">
