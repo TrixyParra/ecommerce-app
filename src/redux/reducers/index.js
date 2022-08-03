@@ -1,10 +1,10 @@
 // adding them in rootReducers 
 
-import addItem from "./addItem"; 
+import { addItem } from "../actions"; 
 import { combineReducers } from "redux"; 
 
 const rootReducers = combineReducers({
-    addItem 
+    addItem
 }); 
 
 export default rootReducers; 

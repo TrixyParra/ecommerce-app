@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom"; 
 import useFetch from "./useFetch"; 
-// import { useDispatch } from "react-redux/es/exports"; 
+// import { useDispatch } from "react-redux"; 
 // import { addItem, deleteItem } from "../redux/actions/index"; 
 
 export default function ProductDetails() {
@@ -10,21 +10,6 @@ export default function ProductDetails() {
     const { id } = useParams(); 
     const { data: product, isLoading, error } = useFetch('https://fakestoreapi.com/products/' + id); 
     // const [ itemQuantity, setItemQuantity ] = useState("1"); 
-
-    const [ cartButton, setCartButton ] = useState("Add to Cart"); 
-
-    // Store useDispatch in a variable 
-    // const dispatch = useDispatch();
-
-    // const handleCart = (product) => {
-    //     if (cartButton === "Add to Cart") {
-    //         dispatch(addItem(product)); 
-    //         setCartButton("Remove from Cart"); 
-    //     } else {
-    //         dispatch(deleteItem(product)); 
-    //         setCartButton("Add to Cart"); 
-    //     } 
-    // }; 
 
     return (
         <>
@@ -50,3 +35,21 @@ export default function ProductDetails() {
         </> 
     ); 
 } 
+
+
+
+
+
+// const [ cartButton, setCartButton ] = useState("Add to Cart"); 
+    // Store useDispatch in a variable 
+    // const dispatch = useDispatch();
+
+    // const handleCart = (product) => {
+    //     if (cartButton === "Add to Cart") {
+    //         dispatch(addItem(product)); 
+    //         setCartButton("Remove from Cart"); 
+    //     } else {
+    //         dispatch(deleteItem(product)); 
+    //         setCartButton("Add to Cart"); 
+    //     } 
+    // }; 

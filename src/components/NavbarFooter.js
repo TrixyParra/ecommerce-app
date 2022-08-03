@@ -6,10 +6,6 @@ import { UserContext } from '../contexts/UserContext';
 
 export default function NavbarFooter() {  ////(props) 
     const { loggedInUser } = useContext(UserContext); 
-
-    // Geting a state of addItems 
-    // write the name of the file not the item 
-    // const state = useSelector((state) => state.addItem); 
     
     return (
         <>
@@ -18,7 +14,7 @@ export default function NavbarFooter() {  ////(props)
                 <div className="Nav-Links">
                     <NavLink route="/" label="Home" /> 
                     <NavLink route="/shop" label="Shop" /> 
-                    <NavLink route="/cart" label="Cart (0)" /> 
+                    <NavLink route="/cart" label="Cart" /> 
                     {/* <NavLink route="/cart" label="Cart ({state.length})" />  */}
                     { !loggedInUser && <NavLink route="/login" label="Login" /> } 
                     { loggedInUser && <NavLink route="/login" label="Logout" /> } 
@@ -49,4 +45,12 @@ export default function NavbarFooter() {  ////(props)
 } 
 
 // ToDo: Make nav it's own component ? 
-// ToDo: Fix the Logout to refresh login page ?
+// ToDo: Fix the Logout to refresh login page ? 
+
+
+
+
+
+// Geting a state of addItems 
+    // write the name of the file not the item 
+    // const state = useSelector((state) => state.addItem); 
