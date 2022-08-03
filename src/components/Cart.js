@@ -1,5 +1,12 @@
 export default function Cart() {
     return (
-        <div>Cart Page</div> 
+        <>
+            <div className="Cart">
+                <h2>Your Cart</h2> 
+                <div className="Cart-Items">
+                    
+                </div>
+            </div> 
+        </> 
     ); 
 } 

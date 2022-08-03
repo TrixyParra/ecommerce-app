@@ -1,10 +1,15 @@
 import NavLink from './NavLink';
 import { Outlet } from 'react-router-dom'; 
 import { useContext } from 'react';
-import { UserContext } from '../contexts/UserContext';
+import { UserContext } from '../contexts/UserContext'; 
+// import { useSelector } from 'react-redux/es/hooks/useSelector'; 
 
 export default function NavbarFooter() {  ////(props) 
     const { loggedInUser } = useContext(UserContext); 
+
+    // Geting a state of addItems 
+    // write the name of the file not the item 
+    // const state = useSelector((state) => state.addItem); 
     
     return (
         <>
@@ -14,6 +19,7 @@ export default function NavbarFooter() {  ////(props)
                     <NavLink route="/" label="Home" /> 
                     <NavLink route="/shop" label="Shop" /> 
                     <NavLink route="/cart" label="Cart (0)" /> 
+                    {/* <NavLink route="/cart" label="Cart ({state.length})" />  */}
                     { !loggedInUser && <NavLink route="/login" label="Login" /> } 
                     { loggedInUser && <NavLink route="/login" label="Logout" /> } 
                 </div> 
