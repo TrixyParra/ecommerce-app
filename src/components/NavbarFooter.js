@@ -13,7 +13,7 @@ export default function NavbarFooter() {  ////(props)
                 <div className="Nav-Links">
                     <NavLink route="/" label="Home" /> 
                     <NavLink route="/shop" label="Shop" /> 
-                    <NavLink route="/cart" label="View Cart" /> 
+                    <NavLink route="/cart" label="Cart (0)" /> 
                     { !loggedInUser && <NavLink route="/login" label="Login" /> } 
                     { loggedInUser && <NavLink route="/login" label="Logout" /> } 
                 </div> 
