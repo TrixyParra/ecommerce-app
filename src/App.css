@@ -138,7 +138,7 @@ footer p {
   border: 5px solid rgba(50, 205, 50, 0.356); 
   border-radius: 50%; 
   border-top-color: rgb(40, 241, 40); 
-  /*margin: 40vh auto;*/    /* ! margin top/bottom affects where page loads to instead of the top */
+  /*margin: 40vh auto;*/    /* ! margin top/bottom in px/vh affects where page loads to instead loading at the top */
   margin: 70px auto; 
   animation: spinner 1s linear infinite; 
 } 
@@ -462,6 +462,58 @@ footer p {
   background-color: rgb(40, 241, 40); 
 } 
 /* End of Product Details Page */ 
+
+
+/* Cart Page */ 
+.Cart-Items {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  border: 1px solid #cbced1; 
+  padding: 20px; 
+  margin: 40px auto; 
+} 
+
+.Cart-Items img {
+  height: auto; 
+  width: 70px; 
+  padding: 5px; 
+} 
+
+.Cart-Items p {
+  padding: 10px; 
+} 
+
+.Remove-Button {
+  text-align: center;
+  padding: 5px 8px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: darkred; 
+  color: #fff; 
+} 
+
+.Remove-Button:hover {
+  background-color: red; 
+} 
+
+.Checkout-Button {
+  background-color: limegreen; 
+  color: white; 
+  padding: 8px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff; 
+  margin: 0 10px; 
+  cursor: pointer; 
+  transition: all 0.5s; 
+} 
+
+.Checkout-Button:hover {
+  background-color: rgb(40, 241, 40); 
+} 
+/* End of Cart Page */ 
 
 
 /* Login Page */ 

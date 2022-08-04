@@ -12,28 +12,32 @@ export default function Cart() {
         <h2>Your Cart</h2>
         {/* Mapping out the cart */}
         {cart.map((product) => (
-          <div>
-            <p>{product.title}</p>
-            <p>{product.price}</p>
-            <p>{product.description}</p> 
-            <p>{product.qty}</p> 
-            <button
-              onClick={() => {
-                dispatch({ type: "REMOVE_FROM_CART", payload: product }); 
-              }}
-            >
-              X
-            </button>
+          <div className="Cart-Items">
+            <img src={product.image} alt="" /> 
+            {/* <div classname="Cart-Details"> */}
+                <p>{product.title}</p> 
+                <p><b>Price:</b><br />${product.price}</p> 
+                <p><b>Quantity:</b><br />{product.qty}</p> 
+                <button
+                    onClick={() => {
+                        dispatch({ type: "REMOVE_FROM_CART", payload: product }); 
+                    }} 
+                    className="Remove-Button"
+                    >
+                    Remove
+                </button> 
+            {/* </div>  */}
           </div>
         ))}
         <button
           onClick={() => {
             dispatch({ type: "CLEAR_CART" });
           }}
+          className="Checkout-Button"
         >
           Checkout
-        </button>
-      </div>
-    </>
-  );
+        </button> 
+      </div> 
+    </> 
+  ); 
 } 
