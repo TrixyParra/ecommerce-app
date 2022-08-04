@@ -1,4 +1,5 @@
-import { CartState } from "../contexts/Context";
+import { Link } from "react-router-dom"; 
+import { CartState } from "../contexts/Context"; 
 
 export default function Cart() {
   const {
@@ -16,8 +17,8 @@ export default function Cart() {
             <img src={product.image} alt="" /> 
             {/* <div classname="Cart-Details"> */}
                 <p>{product.title}</p> 
-                <p><b>Price:</b><br />${product.price}</p> 
                 <p><b>Quantity:</b><br />{product.qty}</p> 
+                <p><b>Price:</b><br />${product.price}</p> 
                 <button
                     onClick={() => {
                         dispatch({ type: "REMOVE_FROM_CART", payload: product }); 
@@ -28,15 +29,17 @@ export default function Cart() {
                 </button> 
             {/* </div>  */}
           </div>
-        ))}
-        <button
-          onClick={() => {
-            dispatch({ type: "CLEAR_CART" });
-          }}
-          className="Checkout-Button"
-        >
-          Checkout
-        </button> 
+        ))} 
+        <Link to="/checkout">
+            <button
+                // onClick={() => {
+                //     dispatch({ type: "CLEAR_CART" });
+                // }}
+                className="Checkout-Button"
+            >
+                Checkout
+            </button> 
+        </Link>
       </div> 
     </> 
   ); 

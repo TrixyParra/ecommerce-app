@@ -10,6 +10,7 @@ import Login from './components/Login';
 import { UserProvider } from './contexts/UserContext'; 
 import AuthChecker from './components/AuthChecker'; 
 import ProductDetails from './components/ProductDetails';
+import Checkout from './components/Checkout';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                     <Cart />
                   </AuthChecker> 
                 } /> 
+                <Route path="/checkout" element={<Checkout />} /> 
                 <Route path="/login" element={<Login />} /> 
                 <Route path="*" element={<NotFound />} /> 
               </Route> 
