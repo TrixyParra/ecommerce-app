@@ -7,9 +7,8 @@ export default function ProductDetails() {
     // Grab Route parameter (id) from the Route to fetch the product from the id 
     const { id } = useParams(); 
     const { data: product, isLoading, error } = useFetch('https://fakestoreapi.com/products/' + id); 
-    // const [ itemQuantity, setItemQuantity ] = useState("1"); 
 
-    // deconstructing - imported cart stae and dispatch 
+    // deconstructing - imported cart state and dispatch 
     const { state: {cart}, dispatch } = CartState(); 
 
     return (
@@ -37,21 +36,3 @@ export default function ProductDetails() {
         </> 
     ); 
 } 
-
-
-
-
-
-// const [ cartButton, setCartButton ] = useState("Add to Cart"); 
-    // Store useDispatch in a variable 
-    // const dispatch = useDispatch();
-
-    // const handleCart = (product) => {
-    //     if (cartButton === "Add to Cart") {
-    //         dispatch(addItem(product)); 
-    //         setCartButton("Remove from Cart"); 
-    //     } else {
-    //         dispatch(deleteItem(product)); 
-    //         setCartButton("Add to Cart"); 
-    //     } 
-    // }; 
