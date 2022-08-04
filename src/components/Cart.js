@@ -1,50 +1,39 @@
-// import { useSelector, useDispatch } from 'react-redux';
-// import { deleteItem } from '../redux/actions'; 
+import { CartState } from "../contexts/Context";
 
 export default function Cart() {
+  const {
+    state: { cart },
+    dispatch,
+  } = CartState();
 
-    return (
-        <>
-            <div className="Cart" style={{ textAlign: "center", padding: "30px" }}>
-                <h2>Your Cart</h2> 
-                <div className="Cart-Items">
-                    <img src="" alt="" /> 
-                    <h3>Product: </h3> 
-                    <p>Price: </p> 
-                    <p>Quantity: </p> 
-                    <p>Total: </p> 
-                </div> 
-            </div> 
-        </> 
-    ); 
+  return (
+    <>
+      <div className="Cart" style={{ textAlign: "center", padding: "30px" }}>
+        <h2>Your Cart</h2>
+        {/* Mapping out the cart */}
+        {cart.map((product) => (
+          <div>
+            <p>{product.title}</p>
+            <p>{product.price}</p>
+            <p>{product.description}</p> 
+            <p>{product.qty}</p> 
+            <button
+              onClick={() => {
+                dispatch({ type: "REMOVE_FROM_CART", payload: product }); 
+              }}
+            >
+              X
+            </button>
+          </div>
+        ))}
+        <button
+          onClick={() => {
+            dispatch({ type: "CLEAR_CART" });
+          }}
+        >
+          Checkout
+        </button>
+      </div>
+    </>
+  );
 } 
-
-
-
-
-
-// export default function Cart() {
-//     const state = useSelector((state) => state.addItem); 
-//     const dispatch = useDispatch(); 
-//     const cartItems = (cartItem) => {
-//         return (
-//             <>
-//                 <button>Close</button> 
-//                 <h3>{cartItem.title}</h3> 
-//                 <p></p>
-//             </>
-//         ); 
-//     }; 
-
-//     return (
-//         <>
-//             { state.length !== 0 && state.map(cartItems) } 
-//             <div className="Cart">
-//                 <h2>Your Cart</h2> 
-//                 <div className="Cart-Items">
-                    
-//                 </div>
-//             </div> 
-//         </> 
-//     ); 
-// } 

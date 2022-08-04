@@ -1,14 +1,16 @@
 //import { useState } from "react"; 
 import { useParams } from "react-router-dom"; 
+import { CartState } from "../contexts/Context";
 import useFetch from "./useFetch"; 
-// import { useDispatch } from "react-redux"; 
-// import { addItem, deleteItem } from "../redux/actions/index"; 
 
 export default function ProductDetails() {
     // Grab Route parameter (id) from the Route to fetch the product from the id 
     const { id } = useParams(); 
     const { data: product, isLoading, error } = useFetch('https://fakestoreapi.com/products/' + id); 
     // const [ itemQuantity, setItemQuantity ] = useState("1"); 
+
+    // deconstructing - imported cart stae and dispatch 
+    const { state: {cart}, dispatch } = CartState(); 
 
     return (
         <>
@@ -25,8 +27,9 @@ export default function ProductDetails() {
                             <p><b>Category:</b> { product.category }</p> 
                             <p><b>Product Description:</b> { product.description }</p> 
                             <input type="number" id="quantity" name="quantity" min="1" max="10" defaultValue="1"></input> 
-                            <button>Add to Cart</button>
-                            {/* <button onClick={() => handleCart(product)}>{ cartButton }</button>  */}
+                            <button onClick={() => {
+                                dispatch({type: "ADD_TO_CART", payload: product, quantity: document.getElementById("quantity").value })
+                            }}>Add to Cart</button>
                         </div> 
                     </div> 
                 )} 
