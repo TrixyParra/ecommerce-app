@@ -5,12 +5,12 @@ export default function Cart() {
   const {
     state: { cart },
     dispatch,
-  } = CartState();
+  } = CartState(); 
 
   return (
     <>
       <div className="Cart" style={{ textAlign: "center", padding: "30px" }}>
-        <h2>Your Cart</h2>
+        <h2 style={{ marginBottom: "40px" }}>Your Cart</h2> 
         {/* Mapping out the cart */}
         {cart.map((product) => (
           <div className="Cart-Items">
@@ -30,16 +30,18 @@ export default function Cart() {
             {/* </div>  */}
           </div>
         ))} 
+        <div className="Cart-Total">
+          <h3>Total:</h3> 
+          <h3>${cart.reduce((acc, product) => acc + product.qty * product.price, 0).toFixed(2)}</h3> 
+        </div> 
+        
         <Link to="/checkout">
             <button
-                // onClick={() => {
-                //     dispatch({ type: "CLEAR_CART" });
-                // }}
                 className="Checkout-Button"
             >
                 Checkout
             </button> 
-        </Link>
+        </Link> 
       </div> 
     </> 
   ); 
