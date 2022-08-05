@@ -1,8 +1,9 @@
 import NavLink from './NavLink';
-import { Outlet } from 'react-router-dom'; 
+import { Link, Outlet } from 'react-router-dom'; 
 import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext'; 
-// import { useSelector } from 'react-redux/es/hooks/useSelector'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'; 
 
 export default function NavbarFooter() {  ////(props) 
     const { loggedInUser } = useContext(UserContext); 
@@ -10,12 +11,13 @@ export default function NavbarFooter() {  ////(props)
     return (
         <>
             <nav className="Navbar">
-                <h2>Store <span>Name</span></h2> 
+                <Link to="/">
+                    <h2>Store <span>Name</span></h2> 
+                </Link> 
                 <div className="Nav-Links">
                     <NavLink route="/" label="Home" /> 
                     <NavLink route="/shop" label="Shop" /> 
                     <NavLink route="/cart" label="Cart" /> 
-                    {/* <NavLink route="/cart" label="Cart ({state.length})" />  */}
                     { !loggedInUser && <NavLink route="/login" label="Login" /> } 
                     { loggedInUser && <NavLink route="/login" label="Logout" /> } 
                 </div> 
@@ -27,9 +29,15 @@ export default function NavbarFooter() {  ////(props)
             <footer style={{ textAlign: "center" }}>
                 <p><b>Stay Connected!</b></p>
                 <div className="Social-Links">
-                    <a href="https://www.facebook.com/">FaceBook</a> 
-                    <a href="https://www.instagram.com/">Instagram</a> 
-                    <a href="https://www.tiktok.com/">TikTok</a> 
+                    <a href="https://www.facebook.com/">
+                        <FontAwesomeIcon icon={faFacebook} />
+                    </a> 
+                    <a href="https://www.instagram.com/">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a> 
+                    <a href="https://www.tiktok.com/">
+                        <FontAwesomeIcon icon={faTiktok} />
+                    </a> 
                 </div>
                 <div className="Footer-NavLinks">
                     <a href="/">Home</a> 
@@ -44,13 +52,6 @@ export default function NavbarFooter() {  ////(props)
     ); 
 } 
 
-// ToDo: Make nav it's own component ? 
-// ToDo: Fix the Logout to refresh login page ? 
 
-
-
-
-
-// Geting a state of addItems 
-    // write the name of the file not the item 
-    // const state = useSelector((state) => state.addItem); 
+// ? Make nav it's own component ? 
+// ? Fix the Logout to refresh login page ? 

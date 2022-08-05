@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"; 
-import { CartState } from "../contexts/Context";
+import { CartState } from "../contexts/Context"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faCreditCard } from "@fortawesome/free-solid-svg-icons"; 
 
 export default function Checkout() {
     const {
@@ -30,15 +32,15 @@ export default function Checkout() {
                 </div> 
 
                 <form className="Checkout-Form">
-                    <h2>Payment Information</h2> 
+                    <h2>Payment Information<br /><FontAwesomeIcon icon={faCreditCard} /></h2> 
                     <label htmlFor="">First Name</label> 
-                    <input type="text" placeholder="Enter your first name here. . ." required autoComplete="off" /> 
+                    <input type="text" required autoComplete="off" /> 
                     <label htmlFor="">Last Name</label> 
-                    <input type="text" placeholder="Enter your last name here. . ." required autoComplete="off" /> 
+                    <input type="text" required autoComplete="off" /> 
                     <label htmlFor="">Shipping Address</label> 
-                    <input type="text" placeholder="Enter your shipping address here. . ." required autoComplete="off" /> 
+                    <input type="text" required autoComplete="off" /> 
                     <label htmlFor="">Billing Address</label> 
-                    <input type="text" placeholder="Enter your billing address here. . ." required autoComplete="off" /> 
+                    <input type="text" required autoComplete="off" /> 
                     <label htmlFor="">Card Information</label> 
                     <input type="text" inputMode="numeric" placeholder="XXXX XXXX XXXX XXXX" required autoComplete="off" /> 
                 </form> 

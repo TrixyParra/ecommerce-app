@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; 
 
 export default function Home() {
 
@@ -34,7 +36,7 @@ export default function Home() {
                     <h2>"Everything you need,<br></br>For You!"</h2>
                 </div> 
                 <div className="Mailing-List">
-                    <h3>Join our Mailing List!</h3> 
+                    <h3>Join our Mailing List!<br /><FontAwesomeIcon icon={faEnvelope} size="large" /></h3> 
                     <p>Stay in the loop for exclusive deals and new arrivals.</p> 
                     <input type="email" /> 
                     <button>Join</button> 

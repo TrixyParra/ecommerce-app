@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"; 
 import { CartState } from "../contexts/Context"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"; 
 
 export default function Cart() {
   const {
@@ -10,7 +12,7 @@ export default function Cart() {
   return (
     <>
       <div className="Cart" style={{ textAlign: "center", padding: "30px" }}>
-        <h2 style={{ marginBottom: "40px" }}>Your Cart</h2> 
+        <h2 style={{ marginBottom: "40px" }}>Your Cart<br /><FontAwesomeIcon icon={faShoppingCart} /></h2> 
 
         {/* Mapping out the cart */}
         {cart.map((product) => (
