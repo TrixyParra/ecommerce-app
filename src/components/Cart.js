@@ -11,6 +11,7 @@ export default function Cart() {
     <>
       <div className="Cart" style={{ textAlign: "center", padding: "30px" }}>
         <h2 style={{ marginBottom: "40px" }}>Your Cart</h2> 
+
         {/* Mapping out the cart */}
         {cart.map((product) => (
           <div className="Cart-Items">
@@ -18,7 +19,7 @@ export default function Cart() {
             {/* <div classname="Cart-Details"> */}
                 <p>{product.title}</p> 
                 <p><b>Quantity:</b><br />{product.qty}</p> 
-                <p><b>Price:</b><br />${product.price}</p> 
+                <p><b>Price:</b><br />${product.price.toFixed(2)}</p> 
                 <button
                     onClick={() => {
                         dispatch({ type: "REMOVE_FROM_CART", payload: product }); 
@@ -30,6 +31,7 @@ export default function Cart() {
             {/* </div>  */}
           </div>
         ))} 
+        
         <div className="Cart-Total">
           <h3>Total:</h3> 
           <h3>${cart.reduce((acc, product) => acc + product.qty * product.price, 0).toFixed(2)}</h3> 

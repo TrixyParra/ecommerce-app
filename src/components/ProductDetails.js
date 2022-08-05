@@ -22,7 +22,9 @@ export default function ProductDetails() {
                         <div className="Product-Description">
                             <h2>{ product.title }</h2> 
                             <p><b>Rated: </b> { product.rating && product.rating.rate } <b>by (</b>{ product.rating && product.rating.count }<b>) reviewers!</b></p> 
-                            <p style={{ color: "limegreen", fontWeight: "bold", fontSize: "22px" }}>${ product.price }</p> 
+                            <p style={{ color: "limegreen", fontWeight: "bold", fontSize: "22px" }}>
+                                ${ product.price.toFixed(2) }
+                            </p> 
                             <p><b>Category:</b> { product.category }</p> 
                             <p><b>Product Description:</b> { product.description }</p> 
                             <input type="number" id="quantity" name="quantity" min="1" max="10" defaultValue="1"></input> 
