@@ -524,6 +524,54 @@ footer p {
 /* End of Cart Page */ 
 
 
+/* Checkout Page */ 
+.Checkout-Items {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  border: 1px solid #cbced1; 
+  padding: 3px; 
+  margin: 10px auto; 
+} 
+
+.Checkout-Items img {
+  height: 60px; 
+  width: 40px; 
+  padding: 5px; 
+} 
+
+.Checkout-Items p {
+  padding: 5px; 
+} 
+
+.Checkout-Form {
+  display: flex; 
+  flex-direction: column; 
+  background-color: #ecf0f3;
+  border: 3px solid rgba(50, 205, 50, 0.356); 
+  border-radius: 5px; 
+  max-width: 600px; 
+  padding: 40px; 
+  margin: 40px auto; 
+} 
+
+.Checkout-Form label {
+  text-align: left; 
+  font-size: 18px;
+  font-weight: bold; 
+  margin: 10px 0px; 
+} 
+
+.Checkout-Form input {
+  font-size: 16px; 
+  border-radius: 5px; 
+  border-color: limegreen; 
+  outline: none; 
+  padding: 8px 15px; 
+}
+/* End of Checkout Page */ 
+
+
 /* Login Page */ 
 .Login-Section {
   padding: 10px; 
