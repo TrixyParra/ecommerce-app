@@ -12,7 +12,7 @@ export default function NavbarFooter() {  ////(props)
         <>
             <nav className="Navbar">
                 <Link to="/">
-                    <h2>Store <span>Name</span></h2> 
+                    <h2>FOR <span className='You-Text'>YOU</span></h2> 
                 </Link> 
                 <div className="Nav-Links">
                     <NavLink route="/" label="Home" /> 

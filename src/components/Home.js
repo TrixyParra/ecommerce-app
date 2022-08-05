@@ -33,7 +33,7 @@ export default function Home() {
 
             <div className="Slogan-Mailing">
                 <div className="Slogan">
-                    <h2>"Everything you need,<br></br>For You!"</h2>
+                    <h2>" Everything you need,<br></br>FOR <span className='You-TextHome'>YOU</span> "</h2>
                 </div> 
                 <div className="Mailing-List">
                     <h3>Join our Mailing List!<br /><FontAwesomeIcon icon={faEnvelope} size="large" /></h3> 
