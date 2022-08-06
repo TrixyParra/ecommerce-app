@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ecommerce-app/static/css/main.bb9d5829.css",
+    "main.js": "/ecommerce-app/static/js/main.0d28f477.js",
+    "static/js/787.0c1a86ef.chunk.js": "/ecommerce-app/static/js/787.0c1a86ef.chunk.js",
+    "static/media/sale.jpg": "/ecommerce-app/static/media/sale.6acb301e31a670318046.jpg",
+    "static/media/technology.jpg": "/ecommerce-app/static/media/technology.f34c32e25c2ccb9742cb.jpg",
+    "static/media/mens-clothes.jpg": "/ecommerce-app/static/media/mens-clothes.be357f7212347aaa7963.jpg",
+    "static/media/not-found-background.jpg": "/ecommerce-app/static/media/not-found-background.5fef5d0a5925f14b458d.jpg",
+    "static/media/summer-sale-banner.jpg": "/ecommerce-app/static/media/summer-sale-banner.69500861c34e1a1e49ea.jpg",
+    "static/media/jewelry.jpg": "/ecommerce-app/static/media/jewelry.c4ce1aefb2c9ec477933.jpg",
+    "static/media/womens-clothes.jpg": "/ecommerce-app/static/media/womens-clothes.8387acfba97dd8298191.jpg",
+    "index.html": "/ecommerce-app/index.html",
+    "main.bb9d5829.css.map": "/ecommerce-app/static/css/main.bb9d5829.css.map",
+    "main.0d28f477.js.map": "/ecommerce-app/static/js/main.0d28f477.js.map",
+    "787.0c1a86ef.chunk.js.map": "/ecommerce-app/static/js/787.0c1a86ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb9d5829.css",
+    "static/js/main.0d28f477.js"
+  ]
+}
