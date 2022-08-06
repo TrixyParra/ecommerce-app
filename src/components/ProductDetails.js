@@ -9,7 +9,8 @@ export default function ProductDetails() {
     const { data: product, isLoading, error } = useFetch('https://fakestoreapi.com/products/' + id); 
 
     // deconstructing - imported cart state and dispatch 
-    const { state: {cart}, dispatch } = CartState(); 
+    // const { state: {cart}, dispatch } = CartState(); 
+    const { dispatch } = CartState(); 
 
     return (
         <>
