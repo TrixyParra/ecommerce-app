@@ -17,7 +17,7 @@ export default function Home() {
                         <h3>Women's Clothing</h3> 
                     </div> 
                     <div className="Mens">
-                        <h3>Men's CLothing</h3> 
+                        <h3>Men's Clothing</h3> 
                     </div> 
                     <div className="Jewelry">
                         <h3>Jewelry</h3> 
