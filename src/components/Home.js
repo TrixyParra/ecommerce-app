@@ -36,7 +36,7 @@ export default function Home() {
                     <h2>" Everything you need,<br></br>FOR <span className='You-TextHome'>YOU</span> "</h2>
                 </div> 
                 <div className="Mailing-List">
-                    <h3>Join our Mailing List!<br /><FontAwesomeIcon icon={faEnvelope} size="large" /></h3> 
+                    <h3>Join Our Mailing List!<br /><FontAwesomeIcon icon={faEnvelope} size="large" /></h3> 
                     <p>Stay in the loop for exclusive deals and new arrivals.</p> 
                     <input type="email" /> 
                     <button>Join</button> 
