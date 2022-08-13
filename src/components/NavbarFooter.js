@@ -40,11 +40,11 @@ export default function NavbarFooter() {  ////(props)
                     </a> 
                 </div>
                 <div className="Footer-NavLinks">
-                    <a href="/">Home</a> 
+                    <Link to="/">Home</Link> 
                     <span className="Footer-Line">|</span> 
-                    <a href="/shop">Shop</a> 
+                    <Link to="/shop">Shop</Link> 
                     <span className="Footer-Line">|</span> 
-                    <a href="/cart">Cart</a>
+                    <Link to="/cart">Cart</Link> 
                 </div>
                 <div className="Footer-StoreName">&copy; 2022 Trixy Parra</div>
             </footer> 
